@@ -10,31 +10,8 @@ import {
 } from "../../lib/features/leadsSlice"
 import styles from './page.module.css'
 import { Lead } from "../../lib/features/leadsSlice"
-import { useRouter } from 'next/navigation';
 
 const LeadTable: React.FC = () => {
-    // const [isLoading, setIsLoading] = useState(true);
-    // const router = useRouter();
-
-    // useEffect(() => {
-    //     const checkAuth = async () => {
-    //         const res = await fetch('/api/auth/me', {
-    //             method: 'GET',
-    //             credentials: 'include',
-    //         });
-
-    //         if (!res.ok) {
-    //             router.push('/auth/login');
-    //         } else {
-    //             setIsLoading(false);
-    //         }
-    //     };
-
-    //     checkAuth();
-    // }, [router]);
-
-    // if (isLoading) return <p>Loading...</p>;
-
     const dispatch: AppDispatch = useDispatch()
     const { leads, searchQuery, sortOrder, sortField, loading, error } = useSelector(
         (state: RootState) => state.leads
