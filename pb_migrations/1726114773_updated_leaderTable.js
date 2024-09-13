@@ -3,7 +3,6 @@ migrate((db) => {
   const dao = new Dao(db)
   const collection = dao.findCollectionByNameOrId("ta5jmtmnjamkr5g")
 
-  // add
   collection.schema.addField(new SchemaField({
     "system": false,
     "id": "k4qgzqjp",
@@ -19,7 +18,6 @@ migrate((db) => {
     }
   }))
 
-  // add
   collection.schema.addField(new SchemaField({
     "system": false,
     "id": "rpfhrfhk",
@@ -40,10 +38,8 @@ migrate((db) => {
   const dao = new Dao(db)
   const collection = dao.findCollectionByNameOrId("ta5jmtmnjamkr5g")
 
-  // remove
   collection.schema.removeField("k4qgzqjp")
 
-  // remove
   collection.schema.removeField("rpfhrfhk")
 
   return dao.saveCollection(collection)

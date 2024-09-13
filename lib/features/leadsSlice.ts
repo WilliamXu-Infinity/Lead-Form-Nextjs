@@ -42,18 +42,14 @@ const timeTranformer = ((isoDateString: string): string => {
     return new Intl.DateTimeFormat('en-US', options).format(date);
 })
 
-// Thunk to fetch leads
 export const fetchLeads = createAsyncThunk('leads/fetchLeads', async () => {
-  // Fetch the data from PocketBase
   const resultList = await pb.collection('leaderTable').getList(1, 50, {
-    // Optionally add filters or sorting if needed
   });
 
-  // Map each RecordModel to a Lead
   const leads = resultList.items.map((record) => {
     return {
       id: record.id,
-      name: record.name,  // Assuming these fields exist on record
+      name: record.name,  
       created: timeTranformer(record.created),
       status: record.status,
       citizenship: record.citizenship,

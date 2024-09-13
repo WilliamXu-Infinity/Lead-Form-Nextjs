@@ -7,10 +7,8 @@ migrate((db) => {
     "CREATE UNIQUE INDEX `idx_Y5uZF5u` ON `leaderTable` (\n  `name`,\n  `email`,\n  `message`,\n  `created`,\n  `updated`\n)"
   ]
 
-  // remove
   collection.schema.removeField("cojhycch")
 
-  // update
   collection.schema.addField(new SchemaField({
     "system": false,
     "id": "pslahmi9",
@@ -35,7 +33,6 @@ migrate((db) => {
     "CREATE UNIQUE INDEX `idx_Y5uZF5u` ON `leaderTable` (\n  `firstName`,\n  `lastName`,\n  `email`,\n  `message`,\n  `created`,\n  `updated`\n)"
   ]
 
-  // add
   collection.schema.addField(new SchemaField({
     "system": false,
     "id": "cojhycch",
@@ -51,7 +48,6 @@ migrate((db) => {
     }
   }))
 
-  // update
   collection.schema.addField(new SchemaField({
     "system": false,
     "id": "pslahmi9",

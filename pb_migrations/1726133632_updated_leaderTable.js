@@ -7,7 +7,6 @@ migrate((db) => {
     "CREATE UNIQUE INDEX `idx_Y5uZF5u` ON `leaderTable` (\n  `name`,\n  `email`,\n  `message`,\n  `created`,\n  `updated`,\n  `createAt`,\n  `linkedin`,\n  `visaInterest`,\n  `status`,\n  `citizenship`\n)"
   ]
 
-  // add
   collection.schema.addField(new SchemaField({
     "system": false,
     "id": "hut32zzy",
@@ -23,7 +22,6 @@ migrate((db) => {
     }
   }))
 
-  // add
   collection.schema.addField(new SchemaField({
     "system": false,
     "id": "wtycyooc",
@@ -48,10 +46,8 @@ migrate((db) => {
     "CREATE UNIQUE INDEX `idx_Y5uZF5u` ON `leaderTable` (\n  `name`,\n  `email`,\n  `message`,\n  `created`,\n  `updated`,\n  `createAt`\n)"
   ]
 
-  // remove
   collection.schema.removeField("hut32zzy")
 
-  // remove
   collection.schema.removeField("wtycyooc")
 
   return dao.saveCollection(collection)

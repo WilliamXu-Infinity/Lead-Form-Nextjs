@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Requirements: https://www.notion.so/tryalma/Full-stack-Engineer-Take-Home-Exercise-1a8920479c7f4b9cb7f0ee1c6f33b43e
 
 ## Getting Started
 

@@ -16,6 +16,10 @@
     width: 500px;
 }
 
+.home_image {
+    margin: 0 auto;
+}
+
 
 .form_list {
     display: flex;
@@ -47,7 +51,6 @@
     border-radius: 8px;
     border: 1px solid #ccc;
     height: 150px;
-    /* width: 400px; */
 }
 
 .visa_selection {
@@ -69,28 +72,33 @@
 .visa_selection input[type="radio"] + .visa_selection_label:before {
     content: '';
     display: inline-block;
-    width: 15px; /* Width of the square */
-    height: 15px; /* Height of the square */
-    border: 2px solid #ccc; /* Border color */
-    background-color: #fff; /* Background color */
-    border-radius: 4px; /* Round corners to make it look like a square */
-    margin-right: 10px; /* Space between the radio button and the text */
-    vertical-align: middle; /* Align with text */
+    width: 15px; 
+    height: 15px; 
+    border: 2px solid #ccc; 
+    background-color: #fff; 
+    border-radius: 4px; 
+    margin-right: 10px; 
+    vertical-align: middle; 
+}
+
+.visa_selection input[type="radio"]:hover + .visa_selection_label:before {
+    cursor: pointer;
+    border: 2px solid rgb(32, 157, 32); 
 }
 
 .visa_selection input[type="radio"]:checked + .visa_selection_label:before {
-    background-color: #ccc; /* Fill color when checked */
-    border: 2px solid #ccc; /* Border color when checked */
+    background-color: rgb(32, 157, 32); 
+    border: 2px solid #ccc; 
 }
 
 .visa_selection input[type="radio"]:checked + .visa_selection_label:after {
-    content: '✔'; /* Check mark */
+    content: '✔'; 
     position: absolute;
     left: 6px;
     top: 50%;
     transform: translateY(-50%);
-    color: white; /* Check mark color */
-    font-size: 14px; /* Check mark size */
+    color: white; 
+    font-size: 14px; 
 }
 
 .visa_selection_label {
