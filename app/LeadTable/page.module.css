@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    backdrop-filter: blur(500px); /* Add a blur effect */
+    background-color: transparentize(grey, 1);
+    z-index: 1000;
+}
+
+.green_circle {
+    position: absolute;
+    top: -400px;
+    left: -200px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: rgb(185, 229, 185, 0.2);
+    z-index: -1000;
+    backdrop-filter: blur(10px); 
+}
+
+.menu_bar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 300px;
+    border-right: 1px solid #ccc;
+    /* height: 100%; */
+    padding: 27px 30px;
+    color: black;
+}
+
+.menu_bar h1 {
+    margin-bottom: 60px;
+}
+
+.menu_bar p {
+    display: flex;
+    align-items: left;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 7px 0;
+}
+
+.table_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0 20px 0;
+}
+
+.table_box {
+    flex: 1;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+    border-radius: 20px;
+}
+
+.search_input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    max-width: 200px;
+    margin: 10px 0;
+}
+
+.table_box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_box th, .table_box td {
+    padding: 20px 12px;
+    /* border: 1px solid #ddd; */
+    min-width: 200px;
+}
+
+.table_box th {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: left;
+    color: #ccc;
+}
+
+.table_box td {
+    border-top: 1px solid #ccc;
+    text-align: left;
+}
+
+.table_box tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.table_box tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+.table_box td:last-child {
+    width: 1%; 
+    white-space: nowrap;
+}

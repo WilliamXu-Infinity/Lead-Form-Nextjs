@@ -1,0 +1,32 @@
+/* page.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sub_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0 20px 0;
+}
+
+.submit_button {
+    background-color: black;
+    color: white;
+    padding: 15px 100px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.icon {
+    margin: 50px auto;
+    width: 60px;
+    height: 60px;
+}

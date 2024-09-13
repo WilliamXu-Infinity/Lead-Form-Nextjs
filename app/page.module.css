@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.list_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+}
+
+
+.form_list {
+    display: flex;
+    flex-direction: column;
+    margin: 10 auto;
+    padding: 0 100px;
+    gap: 10px;
+    min-width: 400px;
+    flex-wrap: wrap;
+}
+
+.submit_button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.form_input {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form_textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    height: 150px;
+    /* width: 400px; */
+}
+
+.visa_selection {
+    display: flex;
+    gap: 10px;
+    text-align: left;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.visa_selection input[type="radio"] {
+    display: none;
+}
+
+.visa_selection_label {
+    font-size: 12px;
+}
+
+.visa_selection input[type="radio"] + .visa_selection_label:before {
+    content: '';
+    display: inline-block;
+    width: 15px; /* Width of the square */
+    height: 15px; /* Height of the square */
+    border: 2px solid #ccc; /* Border color */
+    background-color: #fff; /* Background color */
+    border-radius: 4px; /* Round corners to make it look like a square */
+    margin-right: 10px; /* Space between the radio button and the text */
+    vertical-align: middle; /* Align with text */
+}
+
+.visa_selection input[type="radio"]:checked + .visa_selection_label:before {
+    background-color: #ccc; /* Fill color when checked */
+    border: 2px solid #ccc; /* Border color when checked */
+}
+
+.visa_selection input[type="radio"]:checked + .visa_selection_label:after {
+    content: '✔'; /* Check mark */
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white; /* Check mark color */
+    font-size: 14px; /* Check mark size */
+}
+
+.visa_selection_label {
+    display: inline-block;
+}
+
+.error_message {
+    color: red;
+    text-align: left;
+}
+
+.sub_title {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.icon {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+}
